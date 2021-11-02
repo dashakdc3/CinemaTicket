@@ -113,19 +113,19 @@ class Ticket:
         pdf.cell(w=0, h=80, txt="Ticket",
                  border=1, align="C", ln=1)
 
-        # insert first parametor
+        # insert first parameter
         pdf.set_font(family="Times", size=12)
         pdf.cell(w=100, h=25, txt="Name:", border=1)
         pdf.cell(w=0, h=25, txt=str(self.user), border=1, ln=1)
-        # insert second parametor
+        # insert second parameter
         pdf.set_font(family="Times", size=12)
         pdf.cell(w=100, h=25, txt="Ticket id:", border=1)
         pdf.cell(w=0, h=25, txt=str(self.id), border=1, ln=1)
-        # insert third parametor
+        # insert third parameter
         pdf.set_font(family="Times", size=12)
         pdf.cell(w=100, h=25, txt="Price:", border=1)
         pdf.cell(w=0, h=25, txt=str(self.price), border=1, ln=1)
-        # insert fourth parametor
+        # insert fourth parameter
         pdf.set_font(family="Times", size=12)
         pdf.cell(w=100, h=25, txt="Seat Number:", border=1)
         pdf.cell(w=0, h=25, txt=str(self.seat_n), border=1, ln=1)
